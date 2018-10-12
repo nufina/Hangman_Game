@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hangman Game (Popup)</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="http://font.gooleapis.com/css?family">
+    </head>
+    <body>
+       <div id="container">  
+           <h1>Hangman Game</h1>
+           <button id="easy" class="button" onclick="easy()">EASY</button>
+           <button id="hard" class="button" onclick="hard()">HARD</button>
+           <button id="popupButton" class="button-popup">PLAY</button>
+       </div>
+       
+       <div id="simplePopup" class="firstPopup">
+           <div class="popupBox">
+               <p class="closeButton" name="close">&times;</p>
+               <h4>Category</h4>
+               <p id="showCategory"></p>
+               <div class="classArray">
+                   <p id="guessArray"></p>
+               </div>
+               <div id="alphabet"></div>
+           </div> 
+       </div>
+       
+       <div id="winPopup" class="popupWin">
+           <div class="winBox">
+               <h1>You Win!</h1>
+               <button>PLAY</button>
+           </div> 
+       </div>
+       
+       <div id="losePopup" class="popupLose">
+           <div class="loseBox">
+               <h1>You lose!</h1>
+               <button>PLAY</button>
+           </div> 
+       </div>
+       
+       <script src="script.js"></script>
+    </body>
+</html>
